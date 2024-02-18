@@ -22,7 +22,6 @@ function UserList() {
       setLoading(true);
       try {
         const res = await axios.get("https://dummyjson.com/users");
-
         setData(res.data.users);
         setLoading(false);
       } catch (error) {
@@ -89,7 +88,6 @@ function UserList() {
       });
 
       setData(sortedData);
-      console.log("Sorted data:", sortedData);
     }
   };
 

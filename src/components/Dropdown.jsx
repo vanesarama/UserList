@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-const SORT_DATA = [
-  { none: "Filter by", firstName: "Name", lastName: "Surname", email: "Email" },
-];
+const SORT_DATA = [{ firstName: "Name", lastName: "Surname", email: "Email" }];
 
 const Dropdown = ({ onSelectCallback }) => {
   const [isOpen, setIsOpen] = useState(false);
